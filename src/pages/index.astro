@@ -37,9 +37,10 @@ import CardD from "../components/CardD.svelte";
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
+			<!-- https://docs.astro.build/zh-cn/reference/directives-reference/#clientload -->
 			<CardA client:only="react" />
 			<CardB />
-			<CardC client:only="vue" />
+			<CardC client:load />
 			<CardD client:only="svelte" />
 		</ul>
 	</main>

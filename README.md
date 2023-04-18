@@ -3,6 +3,8 @@
 > 这是一个 Playground，包含 astro + pwd + unocss + nanostores +
 > react/mdx/vue/svelte
 
+> [nanostores's trpc issue](https://github.com/nanostores/query/issues/6)
+
 ```
 npm create astro@latest -- --template basics
 ```

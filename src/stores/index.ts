@@ -4,7 +4,7 @@ export const localeAtom = persistentAtom('locale', 'en')
 
 export const darkModeAtom = persistentAtom<boolean>(
   'darkMode',
-  typeof window === 'undefined' ? false : window.matchMedia("(prefers-color-scheme: dark)").matches,
+  false,
   {
     encode: JSON.stringify,
     decode: JSON.parse,
@@ -19,3 +19,7 @@ darkModeAtom.listen((darkMode) => {
     document.documentElement.classList.remove("dark");
   }
 })
+
+if (typeof window !== 'undefined') {
+  darkModeAtom.set(window.matchMedia("(prefers-color-scheme: dark)").matches)
+}
