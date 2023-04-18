@@ -8,7 +8,7 @@ function Switch() {
   const handleClick = () => {
     darkModeAtom.set(!darkMode)
   }
-  return <button onClick={handleClick}>switch {darkMode?'T':'F'}</button>
+  return <button onClick={handleClick} className="dark:(color-white)">switch {/* darkMode?'T':'F' */}</button>
 }
 
 export default function CardA() {

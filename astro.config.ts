@@ -21,6 +21,8 @@ export default defineConfig({
   integrations: [
     AstroPWA({
       // devOptions: { enabled: true },
+      // warnings: Some items were passed to additionalManifestEntries without revisioning info. This is generally NOT safe. Learn more at https://bit.ly/wb-precache.
+
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
         name: 'My Awesome App',
@@ -39,8 +41,8 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png'
           }
-        ]
-      }
+        ],
+      },
     }),
     Unocss(),
     react(),
