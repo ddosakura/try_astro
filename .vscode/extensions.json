@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "mutantdino.resourcemonitor",
+    "antfu.unocss",
+    "antfu.iconify",
+    "antfu.goto-alias",
+    "csstools.postcss",
+    "astro-build.astro-vscode",
+    "unifiedjs.vscode-mdx",
+    "svelte.svelte-vscode",
+    "vue.volar",
+    "Vue.vscode-typescript-vue-plugin"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "try_astro",
+  "image": "ddosakura/hakke:1.2.0-lit",
+  "postCreateCommand": "corepack enable && npm config set registry http://mirrors.tencent.com/npm/",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+        "editor.fontLigatures": true
+      }
+    }
+  }
+}
